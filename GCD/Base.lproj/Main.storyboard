@@ -53,17 +53,26 @@
                                     <constraint firstAttribute="height" constant="317" id="g9j-Oy-waJ"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="K1Z-9e-Skd">
+                                <rect key="frame" x="197" y="236.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="khf-fL-KQ0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lr5-qZ-Nno" firstAttribute="width" secondItem="khf-fL-KQ0" secondAttribute="width" id="76m-iH-Yog"/>
+                            <constraint firstItem="K1Z-9e-Skd" firstAttribute="centerX" secondItem="Lr5-qZ-Nno" secondAttribute="centerX" id="Ba8-We-Rx7"/>
                             <constraint firstItem="Lr5-qZ-Nno" firstAttribute="top" secondItem="khf-fL-KQ0" secondAttribute="top" id="b6A-82-X40"/>
                             <constraint firstAttribute="topMargin" secondItem="Lr5-qZ-Nno" secondAttribute="top" id="bZQ-Eq-Pgd"/>
+                            <constraint firstItem="K1Z-9e-Skd" firstAttribute="centerY" secondItem="Lr5-qZ-Nno" secondAttribute="centerY" id="pco-dq-zm0"/>
                             <constraint firstItem="Lr5-qZ-Nno" firstAttribute="centerX" secondItem="khf-fL-KQ0" secondAttribute="centerX" id="vzs-h5-ypI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="img-MK-3e8"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="K1Z-9e-Skd" id="ynF-ZB-BNy"/>
+                        <outlet property="imageView" destination="Lr5-qZ-Nno" id="ZtQ-vT-eQ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpE-0Z-bq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
